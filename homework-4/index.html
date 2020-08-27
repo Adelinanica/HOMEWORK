@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<title> Flexbox Homework</title>
+<style>
+    .flex-container {
+        display: flex;
+        background-color: white;
+        height: 100vh;
+        flex-direction: column;
+        
+       
+      
+        }
+
+         .flex-middle-container {
+        flex-direction:row;
+        display: flex;
+        flex-wrap: wrap;
+       height:80vh;
+       
+      
+
+     }
+
+
+        .box1  {
+        background-color: red;
+        height: 10vh;
+        
+       
+
+        
+        
+ }
+
+    .box2 {
+        background-color: blue;
+         flex-grow: 1;
+         height:80vh;
+         
+       ;
+       
+       
+         }
+
+    .box3 {
+        background-color: yellow;
+        flex-grow:2;
+        height:80vh;
+      
+       
+        }
+
+    .box4 {
+        background-color: green;
+        width: 100vw;
+       align-self: flex-end;
+       height:10vh;
+      }
+</style>
+
+<body>
+
+    <div class="flex-container">
+        <div class="box1"></div> <!--Acesta fiind cel rosu de sus -->
+      <div class="flex-middle-container">
+           <div class="box2"></div> <!-- acesta este continul galben din stanga si este micut -->
+           <div class="box3"></div> <!-- acesta este continul albastru mare din dreapta-->
+           <div class="box4"></div> <!-- acesta este continul verde de jos si va trebui sa fie cat intreaga linie -->
+       </div>
+    </div>
+
+
+</body>
+
+</html>
