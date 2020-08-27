@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>My Data</legend>
+            <label for="preferedTitle">PreferedTitle:<input name="rating" type="radio" /> Mr.</label>
+            <label for="preferedTitle"> <input name="rating" type="radio" /> Mrs.</label>
+            <label for="preferedTitle"> <input name="rating" type="radio" /> Miss </label>
+            <label for="preferedTitle"> <input name="rating" type="radio" /> Dr. </label>
+
+
+
+            </br>
+            <label for="name">Name:</label>
+            <input name="name" type="text" placeholder="Name" />
+            </br>
+            <label for="email">Email:</label>
+            <input name="email" type="email" placeholder="Email" />
+            </br>
+            <label for="phone">Phone:</label>
+            <input name="phone" type="phone" placeholder="Phone" />
+        </fieldset>
+
+        <fieldset>
+            <legend>Delivery address</legend>
+            <label for="county">Select County:</label>
+            <select name="county">
+                <option value="Cj">Cluj </option>
+                <option value="Sj">Salaj</option>
+                <option value="Ms">Mures</option>
+                <option value="Ab">Alba</option>
+            </select>
+            </br>
+
+            <label for="city">Select City:</label>
+            <select name="city">
+                <option value="Cluj Napoca">Cluj Napoca</option>
+                <option value="Zalau">Zalau</option>
+                <option value="Targu-Mures">Targu-Mures</option>
+                <option value="Alba Iulia">Alba Iulia</option>
+            </select>
+            </br>
+
+            <label for="Address">Address:</label>
+            <textarea rows="6" cols="100" name="Address"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Terms and conditions</legend>
+            <label><input name="terms" type="checkbox" /> acceptTerms</label>
+        </fieldset>
+
+        <button type="submit">Save</button>
+
+     </form>
+</body>
+
+</html>
