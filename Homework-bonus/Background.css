@@ -1,0 +1,81 @@
+#Background {
+    background-color: lightslategray;
+     background-repeat: no-repeat;
+    height:100vh;
+    width: 100vw;
+    background-position: center;
+    margin:0px;
+   
+
+}
+
+
+.box { 
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    border: 1px solid;
+    border-color: grey;
+    text-align: center;
+    box-shadow: 10px 10px 10px  rgb(57, 13, 87);
+   margin: auto; /*auto centrand perfect continul pe orizontala*/;
+   margin-top:200px;
+    
+    
+   
+    
+}
+
+.Good {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #9372ff;
+    font-style: bold;
+    line-height:30px;
+}
+
+.Log {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    line-height: 7px;
+    color: lightslategrey;
+}
+
+.User {
+     line-height: 2;
+     width:280px;
+     text-align: center;
+     
+}
+
+.Password {
+    line-height: 2 ;
+    text-align: center;
+    width:280px;
+}
+
+.Forgot {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8px;
+    color: #007AFF;
+    text-align: center;
+    
+}
+
+.LogIn {
+       height: 30px;
+       width:270px;
+       text-align:center;
+       box-shadow: 5px 5px 5px  rgb(153, 133, 167);
+       
+
+
+}
+   
+
+    
+
+
+
