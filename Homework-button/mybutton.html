@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Button</title>
+    </head>
+    <body>
+        <button type="button" id="clicked">Click me!</button>
+
+        <script>
+            const mybutton= document.getElementById("clicked");
+            mybutton.addEventListener("mouseover" , myFunction);
+            function myFunction() {
+                 document.getElementById("clicked").innerHTML="Hovered";
+            }
+        </script>
+    </body>
+</html>
