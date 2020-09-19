@@ -7,10 +7,13 @@
         <button type="button" id="clicked">Click me!</button>
 
         <script>
-            const mybutton= document.getElementById("clicked");
-            mybutton.addEventListener("mouseover" , myFunction);
+            const poc= document.getElementById("clicked");
+           
+            poc.addEventListener("click" , myFunction);
+            
             function myFunction() {
-                 document.getElementById("clicked").innerHTML="Hovered";
+            document.getElementById("clicked").innerHTML="click me again";
+                
             }
         </script>
     </body>
