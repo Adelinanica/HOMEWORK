@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My Second Button</title>
+    </head>
+    <body>
+        <button  id="hey"  type="Button" onclick="changeText()" >Click this button</button>
+        
+       
+        <script>
+           const myButton = document.getElementById("hey");
+          
+           
+           myButton.addEventListener("click", changeText);
+          
+           var counter= 0;
+                function changeText(){
+                      if (myButton.click !=0 ) {
+                       return myButton.innerHTML="Click me again";
+                        counter= counter+1;
+                        
+                      } else if (myButton.click !=0) {
+                       return myButton.innerHTML="Thank you, goodbye!"
+                        counter=counter+1;
+                }    else if (myButton.click !=0 ) {
+                    return  myButton.style.display="none";
+                    counter=counter+1;
+                    }
+             }
+
+        
+
+
+                console.log(counter);
+             
+             
+             
+             
+             
+             
+             
+             
+             
+                /*  var x = document.getElementById("hey");
+                        x.addEventListener("click", myFunction);
+           
+
+            function myFunction() {
+            document.getElementById("hey").innerHTML = "Click again";*/
+           
+
+
+
+      </script>
+    </body>
+</html>
