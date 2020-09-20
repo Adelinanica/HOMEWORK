@@ -1,52 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>butons and input</title>
+  <head>
+    <title>butons and input</title>
+  </head>
+  <body>
+    <h1>Shopping List</h1>
 
-    </head>
-    <body>
-       <h1>Shopping List</h1>
-    
-      <form id="toshop">
-          <input id="inputshop">
-          <br>
+    <form id="toshop">
+      <input id="inputshop" />
+      <br />
 
-          <button  type="button" onclick="addLi()">Add a product</button>
-          <button type="button" onclick="removeLi()">Remove product</button>
-       
-      </form>
-      
-      <ol id="list">
-        
+      <button type="button" onclick="addLi()">Add a product</button>
+      <!--The remove button should be added near the generated inputs. That button should delete the input that it's close to.-->
+      <button type="button" onclick="removeLi()">Remove product</button>
+    </form>
 
-          
-
-      </ol>
-       
-     
-      
-    </body>
-    <script>
-        function addLi(){
-           var ol=document.getElementById("list");
-           var input=document.getElementById("inputshop");
-           var li=document.createElement("li");
-           li.setAttribute("id" , inputshop.value);
-           li.appendChild(document.createTextNode(inputshop.value));
-           ol.appendChild(li)
-           }
-        function removeLi(){
-        var ol = document.getElementById("list");
-        var input=document.getElementById("inputshop");
-        var item=document.getElementById(inputshop.value);
-        ol.removeChild(item);
-          
-           
-        }
-  
-
-      
-
-
-    </script>
+    <!--You should already have a list of items added with javascript-->
+    <ol id="list"></ol>
+  </body>
+  <script>
+    function addLi() {
+      var ol = document.getElementById("list");
+      var input = document.getElementById("inputshop");
+      var li = document.createElement("li");
+      li.setAttribute("id", inputshop.value);
+      li.appendChild(document.createTextNode(inputshop.value));
+      ol.appendChild(li);
+    }
+    function removeLi() {
+      var ol = document.getElementById("list");
+      var input = document.getElementById("inputshop");
+      var item = document.getElementById(inputshop.value);
+      ol.removeChild(item);
+    }
+  </script>
 </html>

@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Reverse</title>
-        <script>
+  <head>
+    <title>Reverse</title>
+    <script>
+      const Numbers = [10, 40, 3, 8, 7];
+      // I like it that you found the reverse function. But to really understand reduce please try and achieve the reverse of the array
+      const otherWay = Numbers.reduce((a) => {
+        Numbers.reverse();
+        return Numbers;
+      }, []);
+      console.log(otherWay);
 
-             const Numbers = [10, 40, 3, 8, 7];
-            const otherWay = Numbers.reduce((a) => {
-                Numbers.reverse()
-                return Numbers
-            }, []);
-            console.log(otherWay);
-
-
-            let Fruits = ["apple", "banana", "grapes"];
-            let Change = Fruits.reduce((a) => {
-                Fruits.reverse();
-                return Fruits;
-            }, [])
-            console.log(Change);
-
-        </script>
-    </head>
+      let Fruits = ["apple", "banana", "grapes"];
+      let Change = Fruits.reduce((a) => {
+        Fruits.reverse();
+        return Fruits;
+      }, []);
+      console.log(Change);
+    </script>
+  </head>
 </html>
