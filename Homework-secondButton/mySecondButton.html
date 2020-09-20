@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> My Second Button</title>
+    </head>
+    <body>
+        <button  id="hey"  type="Button" onclick="changeText()"  >Click this button</button>
+        
+       
+        <script>
+        const myButton = document.getElementById("hey")
+        myButton.addEventListener("click", changeText);
+          
+           var counter= 0;
+                function changeText(){
+                    counter=counter + 1;
+                    if (counter ===2 ) {
+                       myButton.innerHTML="Click me again";
+                     
+                        } else if (counter ===3) {
+                         myButton.innerHTML="thank you, good bye!";
+                       
+           }    else if   (counter >4 ) {
+                  myButton.style.display="none";
+                 
+              }
+             }
+
+                console.log(counter);
+             
+             
+             
+             
+             
+             
+             
+             
+             
+                /*  var x = document.getElementById("hey");
+                        x.addEventListener("click", myFunction);
+           
+
+            function myFunction() {
+            document.getElementById("hey").innerHTML = "Click again";*/
+           
+
+
+
+      </script>
+    </body>
+</html>
