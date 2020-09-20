@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> homework</title>
+        <style>
+            .flex-container{
+                display:flex;
+                justify-content: space-between;
+                width:90vw;
+                margin: auto;
+                 }
+            .flex-items {
+                width:100px;
+                height:100px;
+                background-color: blue;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-items">1</div>
+            <div class="flex-items">2</div>
+            <div class="flex-items">3</div>
+            <div class="flex-items">4</div>
+            <div class="flex-items">5</div>
+            <div class="flex-items">6</div>
+            <div class="flex-items">7</div>
+            <div class="flex-items">8</div>
+            <div class="flex-items">9</div>
+            <div class="flex-items">10</div>
+          
+        </div>
+
+        <script> 
+           const flexItems = document.getElementsByClassName("flex-items");
+           
+               console.log(flexItems);
+                for (let index=0; index < flexItems.length; index++){  
+                   if(index % 3 ===2){
+                      flexItems[index].style.backgroundColor="red";
+                   }else {
+                       flexItems;
+                   }
+
+                   if (index % 3 ===2){
+                       flexItems[index].innerHTML="fizz";
+                   }
+                   else{
+                       flexItems;
+                   }
+                }
+            
+                   
+             
+                   
+           
+                    
+              
+
+
+
+
+              
+        </script>
+    </body>
+</html>
