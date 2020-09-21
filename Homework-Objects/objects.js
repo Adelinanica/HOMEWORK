@@ -3,7 +3,7 @@ var animal= {
     name: "Milo",
     gut: ["rice", "carrot",],
     gutadd: function (gutadd) {
-        this.gut = this.gut + " " + gutadd;
+        this.gut.push (gutadd);
         console.log(gutadd);
         
     }

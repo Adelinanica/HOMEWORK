@@ -65,6 +65,13 @@ class shoppingCart {
     console.log(cart3.totalPrice);
     console.log(cart3.items.length);
 
+    const cart4 =new shoppingCart ();
+    cart4.addItem("meat", 5.90);
+    cart4.addItem("biscuit", 2.00);
+    console.log(cart4.items, cart4.totalPrice);
+    cart4.removeItem("meat", 5.90);
+    console.log(cart4.items, cart4.totalPrice)
+
     
 
 

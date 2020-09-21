@@ -12,12 +12,16 @@
             console.log(otherWay);
 
 
-            let Fruits = ["apple", "banana", "grapes"];
-            let Change = Fruits.reduce((a) => {
-                Fruits.reverse();
-                return Fruits;
-            }, [])
-            console.log(Change);
+          
+
+            var arr =[1, 2, 3, 4, 5];
+           var reduceArray= arr.reduce((other,items) => {
+               other.unshift(items);
+               return other;
+           },[]);
+           console.log(reduceArray);
+          
+
 
         </script>
     </head>
