@@ -12,20 +12,20 @@ class shoppingCart {
         
     }
 
-    removeItem(item, price){
-       this.items.shift(item);
+    removeItem(product, price){
+      const indexOfItemToBeRemoved= this.items.findIndex(item => item === product);
+      this.items.splice(indexOfItemToBeRemoved,1);
         this.totalPrice=this.totalPrice - price;
         
        
     
     }
 
-    total(totalPrice, items){
-        this.totalPrice=this.totalPrice;
-        this.items= items.length;
+   total(){
+     console.log(shoppingCart.totalPrice, shoppingCart.items.length)
         
        
-    }
+  }
 }
 
 
@@ -52,7 +52,7 @@ class shoppingCart {
     cart2.addItem("flour", 2.50);
     cart2.addItem("lollypop", 1.80);
     console.log(cart2.items, cart2.totalPrice);
-    cart2.removeItem("lollipop", 1.80);
+    //cart2.removeItem("lollipop", 1.80);
     console.log(cart2.items, cart2.totalPrice);
     console.log(cart2.totalPrice)
     console.log(cart2.items.length);
@@ -66,7 +66,7 @@ class shoppingCart {
     cart3.addItem("yogurt", 3.00);
     cart3.addItem("cheese", 2.80);
     console.log(cart3.items, cart3.totalPrice);
-    cart3.removeItem("carrots", 1.50);
+  //  cart3.removeItem("carrots", 1.50);
     console.log(cart3.items, cart3.totalPrice);
     console.log(cart3.totalPrice);
     console.log(cart3.items.length);
@@ -75,7 +75,7 @@ class shoppingCart {
     cart4.addItem("meat", 5.90);
     cart4.addItem("biscuit", 2.00);
     console.log(cart4.items, cart4.totalPrice);
-    cart4.removeItem("meat", 5.90);
+  //  cart4.removeItem("meat", 5.90);
     console.log(cart4.items, cart4.totalPrice)
 
     
