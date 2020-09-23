@@ -5,9 +5,9 @@
         <script>
 
              const Numbers = [10, 40, 3, 8, 7];
-            const otherWay = Numbers.reduce((a) => {
-                Numbers.reverse()
-                return Numbers
+            const otherWay = Numbers.reduce((other,items) => {
+                other.unshift(items)
+                return other;
             }, []);
             console.log(otherWay);
 

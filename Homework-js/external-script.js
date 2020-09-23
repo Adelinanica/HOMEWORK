@@ -17,7 +17,7 @@ var m = 30;
  
 
  function convertCToF(celsius) {
-    var f = c * 9/5 + 32;
+    var f = celsius * 9/5 + 32;
      return f;
 }
     var c = 45;

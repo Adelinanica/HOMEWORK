@@ -13,8 +13,10 @@ class shoppingCart {
     }
 
     removeItem(item, price){
-        this.items.shift(item);
+       this.items.shift(item);
         this.totalPrice=this.totalPrice - price;
+        
+       
     
     }
 
@@ -26,16 +28,20 @@ class shoppingCart {
     }
 }
 
+
+
     const cart1 = new shoppingCart ();
-    cart1.addItem("eggs", 1.99);
+     cart1.addItem("eggs", 1.99);
     cart1.addItem("meat", 6.99);
     cart1.addItem("juice", 1.40);
     cart1.addItem("biscuits", 3.50);
     console.log(cart1.items, cart1.totalPrice);
     cart1.removeItem("juice", 1.40);
-    console.log(cart1.items, cart1.totalPrice);
+   console.log(cart1.items, cart1.totalPrice);
     console.log(cart1.totalPrice);
     console.log(cart1.items.length);
+   
+    
 
 
     const cart2 = new shoppingCart ();
