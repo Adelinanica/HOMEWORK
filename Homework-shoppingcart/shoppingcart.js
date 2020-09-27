@@ -10,8 +10,41 @@ class shoppingCart {
   ) {
     this.items.push(product);
 
+<<<<<<< HEAD
+    removeItem(product, price){
+      const indexOfItemToBeRemoved= this.items.findIndex(item => item === product);
+      this.items.splice(indexOfItemToBeRemoved,1);
+        this.totalPrice=this.totalPrice - price;
+        
+       
+    
+    }
+
+   total(){
+     console.log(shoppingCart.totalPrice, shoppingCart.items.length)
+        
+       
+  }
+}
+
+
+
+    const cart1 = new shoppingCart ();
+     cart1.addItem("eggs", 1.99);
+    cart1.addItem("meat", 6.99);
+    cart1.addItem("juice", 1.40);
+    cart1.addItem("biscuits", 3.50);
+    console.log(cart1.items, cart1.totalPrice);
+    cart1.removeItem("juice", 1.40);
+   console.log(cart1.items, cart1.totalPrice);
+    console.log(cart1.totalPrice);
+    console.log(cart1.items.length);
+   
+    
+=======
     this.totalPrice = this.totalPrice + price;
   }
+>>>>>>> master
 
   removeItem(item, price) {
     // shift removes the first element from the list. You need to remove the item that is received from the parameter.
@@ -31,6 +64,16 @@ class shoppingCart {
   }
 }
 
+<<<<<<< HEAD
+    const cart4 =new shoppingCart ();
+    cart4.addItem("meat", 5.90);
+    cart4.addItem("biscuit", 2.00);
+    console.log(cart4.items, cart4.totalPrice);
+     cart4.removeItem("meat", 5.90);
+    console.log(cart4.items, cart4.totalPrice)
+
+    
+=======
 const cart1 = new shoppingCart();
 cart1.addItem("eggs", 1.99);
 cart1.addItem("meat", 6.99);
@@ -42,6 +85,7 @@ cart1.removeItem("juice", 1.4);
 console.log(cart1.items, cart1.totalPrice);
 console.log(cart1.totalPrice);
 console.log(cart1.items.length);
+>>>>>>> master
 
 const cart2 = new shoppingCart();
 cart2.addItem("chocolate", 2.5);

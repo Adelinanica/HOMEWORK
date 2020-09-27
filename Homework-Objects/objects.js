@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+var animal= {
+    type: "dog",
+    name: "Milo",
+    gut: ["rice", "carrot",],
+    gutadd: function (gutadd) {
+        this.gut.push (gutadd);
+        console.log(gutadd);
+        
+    }
+=======
 var animal = {
   type: "dog",
   name: "Milo",
@@ -8,6 +19,7 @@ var animal = {
     this.gut = this.gut + " " + gutadd;
     console.log(gutadd);
   },
+>>>>>>> master
 };
 
 console.log(animal);
