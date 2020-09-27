@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> SetInterval</title>
+        <style>
+            body{
+                width:100vw;
+                height:100vh;
+              
+
+            }
+
+            #grow{
+                display:flex;
+                width:100px;
+                height:200px;
+                background-color: purple;
+                justify-content:center;
+                align-items: center;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div id="grow"></div>
+
+        <script>
+            var width = 100;
+            var growing = setInterval(function () {
+            if(width>1366) cancelInterval(growing)
+            width = width + 5;
+            document.getElementById("grow").style.width = width + 'px';
+            }, 1000);
+        </script>
+    </body>
+</html>
