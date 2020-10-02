@@ -10,7 +10,6 @@ class shoppingCart {
   ) {
     this.items.push(product);
 
-<<<<<<< HEAD
     removeItem(product, price){
       const indexOfItemToBeRemoved= this.items.findIndex(item => item === product);
       this.items.splice(indexOfItemToBeRemoved,1);
@@ -41,21 +40,8 @@ class shoppingCart {
     console.log(cart1.items.length);
    
     
-=======
-    this.totalPrice = this.totalPrice + price;
-  }
->>>>>>> master
 
-  removeItem(item, price) {
-    // shift removes the first element from the list. You need to remove the item that is received from the parameter.
-    // to remove an item from the list based on a condition you can do it in multiple ways:
-    // 1. You can use findIndex to get the index of the item that you actually want to delete.
-    // with the index you can use splice to delete it from the array
-    // 2. You can use filter to get the list without the element that you want to delete and then write
-    // this.items = filteredItems;
-    this.items.shift(item);
-    this.totalPrice = this.totalPrice - price;
-  }
+  
 
   // total should do a console.log with the length of the items array and the totalPrice
   total(totalPrice, items) {
@@ -64,7 +50,6 @@ class shoppingCart {
   }
 }
 
-<<<<<<< HEAD
     const cart4 =new shoppingCart ();
     cart4.addItem("meat", 5.90);
     cart4.addItem("biscuit", 2.00);
@@ -73,19 +58,6 @@ class shoppingCart {
     console.log(cart4.items, cart4.totalPrice)
 
     
-=======
-const cart1 = new shoppingCart();
-cart1.addItem("eggs", 1.99);
-cart1.addItem("meat", 6.99);
-cart1.addItem("juice", 1.4);
-cart1.addItem("biscuits", 3.5);
-console.log(cart1.items, cart1.totalPrice);
-cart1.removeItem("juice", 1.4);
-//instead of the next line you should call the total method
-console.log(cart1.items, cart1.totalPrice);
-console.log(cart1.totalPrice);
-console.log(cart1.items.length);
->>>>>>> master
 
 const cart2 = new shoppingCart();
 cart2.addItem("chocolate", 2.5);
