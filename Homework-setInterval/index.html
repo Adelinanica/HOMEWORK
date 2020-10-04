@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> SetInterval</title>
-        <style>
-            body{
-                width:100vw;
-                height:100vh;
-              
+  <head>
+    <title>SetInterval</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
 
-            }
+      #grow {
+        display: flex;
+        width: 100px;
+        height: 200px;
+        background-color: purple;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grow"></div>
 
-            #grow{
-                display:flex;
-                width:100px;
-                height:200px;
-                background-color: purple;
-                justify-content:center;
-                align-items: center;
-            }
-        </style>
-
-    </head>
-    <body>
-        <div id="grow"></div>
-
-        <script>
-            var width = 100;
-            var growing = setInterval(function () {
-            if(width>1366) cancelInterval(growing)
-            width = width + 5;
-            document.getElementById("grow").style.width = width + 'px';
-            }, 1000);
-        </script>
-    </body>
+    <script>
+      var width = 100;
+      var growing = setInterval(function () {
+        // here you need to write clearInterval not cancelInterval
+        //instead of 1366 use window.innerWidth to make your program work on any resolution
+        if (width > 1366) cancelInterval(growing);
+        // you want to do an if else here, otherwise the code from line 31 and 32 will still be executed if we have a
+        // width higher than 1366 and will make the div grow even larger than the screen
+        width = width + 5;
+        document.getElementById("grow").style.width = width + "px";
+      }, 1000);
+    </script>
+  </body>
 </html>

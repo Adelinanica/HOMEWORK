@@ -11,41 +11,23 @@
       }, []);
       console.log(otherWay);
 
-<<<<<<< HEAD
-             const Numbers = [10, 40, 3, 8, 7];
-            const otherWay = Numbers.reduce((other,items) => {
-                other.unshift(items)
-                return other;
-            }, []);
-            console.log(otherWay);
-
-
-          
-
-            var arr =[1, 2, 3, 4, 5];
-           var reduceArray= arr.reduce((other,items) => {
-               other.unshift(items);
-               return other;
-           },[]);
-           console.log(reduceArray);
-
-           let num=[1,2,3,4,5];
-           let rev= num.reduce((a,b) => [b,...a], []);
-           console.log(rev);
-          
-
-
-        </script>
-    </head>
-</html>
-=======
-      let Fruits = ["apple", "banana", "grapes"];
-      let Change = Fruits.reduce((a) => {
-        Fruits.reverse();
-        return Fruits;
+      const Numbers = [10, 40, 3, 8, 7];
+      const otherWay = Numbers.reduce((other, items) => {
+        other.unshift(items);
+        return other;
       }, []);
-      console.log(Change);
+      console.log(otherWay);
+
+      var arr = [1, 2, 3, 4, 5];
+      var reduceArray = arr.reduce((other, items) => {
+        other.unshift(items);
+        return other;
+      }, []);
+      console.log(reduceArray);
+
+      let num = [1, 2, 3, 4, 5];
+      let rev = num.reduce((a, b) => [b, ...a], []);
+      console.log(rev);
     </script>
   </head>
 </html>
->>>>>>> master
