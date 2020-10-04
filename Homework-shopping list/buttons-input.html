@@ -17,6 +17,8 @@
 <br>
           <button  type="button" onclick="addLi()">Add a product</button>
           
+          <!--You need to create this button near every <li> that you generate with javascript, and the removeLi will
+            get one parameter, the index of the list item that you want to remove and also we need to remove the button itself-->
           <button type="button" onclick="removeLi()">Remove product</button>
        
        
@@ -38,6 +40,7 @@
            li.appendChild(document.createTextNode(inputshop.value));
            ol.appendChild(li)
            }
+           // for now this work only if we create a single list item, if we create multiple list items then this will work only once
         function removeLi(){
         var ol = document.getElementById("list");
         var input=document.getElementById("inputshop");
