@@ -1,5 +1,5 @@
 class shoppingCart {
-  constructor(items, totalPrice) {
+  constructor() {
     this.items = [];
     this.totalPrice = 0;
   }
@@ -9,55 +9,33 @@ class shoppingCart {
     price // parametrii
   ) {
     this.items.push(product);
+    this.totalPrice = this.totalPrice + price;
+  }
 
-    removeItem(product, price){
-      const indexOfItemToBeRemoved= this.items.findIndex(item => item === product);
-      this.items.splice(indexOfItemToBeRemoved,1);
-        this.totalPrice=this.totalPrice - price;
-        
-       
-    
-    }
+  removeItem(product, price) {
+    const indexOfItemToBeRemoved = this.items.findIndex(
+      (item) => item === product
+    );
+    this.items.splice(indexOfItemToBeRemoved, 1);
+    this.totalPrice = this.totalPrice - price;
+  }
 
-   total(){
-     console.log(shoppingCart.totalPrice, shoppingCart.items.length)
-        
-       
+  total() {
+    console.log(this.totalPrice, thi.items.length);
   }
 }
 
-
-
-    const cart1 = new shoppingCart ();
-     cart1.addItem("eggs", 1.99);
-    cart1.addItem("meat", 6.99);
-    cart1.addItem("juice", 1.40);
-    cart1.addItem("biscuits", 3.50);
-    console.log(cart1.items, cart1.totalPrice);
-    cart1.removeItem("juice", 1.40);
-   console.log(cart1.items, cart1.totalPrice);
-    console.log(cart1.totalPrice);
-    console.log(cart1.items.length);
-   
-    
-
-  
-
-  // total should do a console.log with the length of the items array and the totalPrice
-  total(totalPrice, items) {
-    this.totalPrice = this.totalPrice;
-    this.items = items.length;
-  }
-}
-
-    const cart4 =new shoppingCart ();
-    cart4.addItem("meat", 5.90);
-    cart4.addItem("biscuit", 2.00);
-    console.log(cart4.items, cart4.totalPrice);
-     cart4.removeItem("meat", 5.90);
-    console.log(cart4.items, cart4.totalPrice)
-
-    
+const cart1 = new shoppingCart();
+cart1.addItem("eggs", 1.99);
+cart1.addItem("meat", 6.99);
+cart1.addItem("juice", 1.4);
+cart1.addItem("biscuits", 3.5);
+console.log(cart1.items, cart1.totalPrice);
+cart1.removeItem("juice", 1.4);
+// still need to use here the total method not to console log individual properties of the cart
+console.log(cart1.items, cart1.totalPrice);
+console.log(cart1.totalPrice);
+console.log(cart1.items.length);
 
 const cart2 = new shoppingCart();
 cart2.addItem("chocolate", 2.5);
