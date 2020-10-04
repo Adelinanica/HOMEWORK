@@ -29,7 +29,7 @@ ReactDOM.render(
     <h3 id ="school" > {user.school} </h3>
   </div>
   <div>
-    <button id="facebook"> {user.facebook} </button> <button id="instagram"> {user.instagram}</button>
+    <button id="facebook"> <a href ="https://www.facebook.com/"> Facebook</a> </button> <button id="instagram"> <a href =" https://www.instagram.com/?hl=en"></a></button>
   </div>
   <br></br>
   <div id="contact">
