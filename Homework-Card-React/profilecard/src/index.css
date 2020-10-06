@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin:0px;
+    
+    
+}
+ .profile{
+     border:2px solid grey;
+      text-align: center;
+      width:400px;
+      height:90vh;
+      
+ }
+
+    #name{
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 30px;
+        font-size: 40px;
+    }
+    #info{
+        font-family: Arial, Helvetica, sans-serif;
+        color:grey;
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    #school{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+        color: rgb(37, 35, 35);
+        line-height: 30px;
+    }
+
+        #facebook{
+            font-size: 15px;
+            line-height: 20px;
+        }
+        #instagram{
+            font-size: 15px;
+            line-height: 20px;
+            
+        }
+
+        #contact{
+             border: 1px solid black;
+            color: blanchedalmond;
+            background-color: black;
+           text-align: center;
+           height: 50px;
+           line-height: 20px;
+           
+           
+             
+        }
+
+.profile img{
+    width:400px;
+    height:300px;
+}
