@@ -5,14 +5,18 @@ import About from "./About";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
 import booksMockData from "../mocks/books";
+import Books4 from "./Books4";
+import Books from "./Books";
+
+
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      books: booksMockData,
+     books: booksMockData,
       isMenuOpen: false,
-      selectedFilter: "All",
+     selectedFilter: "All",
     };
   }
 
@@ -35,16 +39,16 @@ class App extends Component {
   };
 
   render() {
-    const filters = ["All", "Design", "Mobile", "DevOps", "Essentials"];
-    const tabItems = filters.map((filter) => (
-      <li
-        className={filter === this.state.selectedFilter ? "active" : ""}
-        key={filter}
-        onClick={() => this.selectFilter(filter)}
-      >
-        <a href="#0">{filter}</a>
-      </li>
-    ));
+    // const filters = ["All", "Design", "Mobile", "DevOps", "Essentials"];
+    // const tabItems = filters.map((filter) => (
+    //   <li
+    //     className={filter === this.state.selectedFilter ? "active" : ""}
+    //     key={filter}
+    //     onClick={() => this.selectFilter(filter)}
+    //   >
+    //     <a href="#0">{filter}</a>
+    //   </li>
+    // ));
 
     return (
       <div id="page-wrap">
@@ -52,13 +56,26 @@ class App extends Component {
           pageWrapId="page-wrap"
           isOpen={this.state.isMenuOpen}
           toggleMenu={this.toggleMenu}
+    
         />
 
         
     <NavBar toggleMenu={this.toggleMenu} />
-        <Header title="By FastTrackIT" />
-
-        <section id="books">
+       
+     <Header title="By FastTrackIT" />
+    
+     <Books
+        books={this.state.books}
+        selectedFilter={this.state.selectedFilter}
+        selectFilter={this.selectFilter}
+       />
+     
+     
+    
+    
+    
+     
+        {/* <section id="books">
           <div className="container">
             <div className="row">
               <div className="col-lg-12 text-center">
@@ -81,7 +98,8 @@ class App extends Component {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
+        
                 
 
                 <About/>
