@@ -24,3 +24,11 @@ console.log(convertCToF(c));
 
 c = -20;
 console.log(convertCToF(c));
+
+
+
+function Name (){
+  const name="jessica";
+  return <h1>name</h1>
+}
+console.log(name)
